@@ -1,0 +1,9 @@
+#!/usr/bin/env zsh
+
+add2PATH()
+{
+	if [[ $PATH != *"$1"* ]]
+	then
+		PATH="$PATH":"$1"
+	elif
+}
