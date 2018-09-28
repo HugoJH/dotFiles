@@ -24,11 +24,11 @@ alias getip='hostname -i'
 alias cdd='cd `xdg-user-dir DOWNLOAD`'
 alias cdi='cd `xdg-user-dir PICTURES`' 
 alias cdm='cd `xdg-user-dir MUSIC`' 
-
+alias cds='cd ~/Code/Scriptazos'
 ### OTHER ###
 alias tmux='tmux attach -t base || tmux new -s base'
 alias flush-pdnsd-cache="sudo pdnsd-ctl empty-cache"
-alias dl-music='youtube-dl -x --audio-quality 0 --audio-format ogg'
+alias dl-music='youtube-dl -x --audio-quality 0 --audio-format vorbis'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
