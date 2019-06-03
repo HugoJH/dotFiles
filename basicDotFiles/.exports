@@ -4,3 +4,5 @@ export ZSH=~/.oh-my-zsh
 export QUOTING_STYLE=literal
 export EDITOR="vim"
 export ZSH_THEME="zeta"
+
+		

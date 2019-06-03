@@ -1,8 +1,17 @@
 #!/usr/bin/env zsh
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-for file in $(ls -A basicDotFiles | grep "^\."); do ln -s $PWD/basicDotFiles/$file $HOME/$file; done
+createDotFilesSymLinks()
+{
+    for file in $(ls -d $1/.?*); do
+        ln -snf  $( realpath $file) $HOME/$( basename $file)
+    done
+}
 
-ln -s $DIR/systemd/ $HOME/.config/systemd
-ln -s $DIR/oh-my-zsh/ $HOME/.oh-my-zsh
+
+createBasicAndExtendedDotFilesSymLinks()
+{
+    createDotFilesSymLinks basicDotFiles 
+    createDotFilesSymLinks extendedDotFiles/BSCDotFiles 
+    ln -snf $( realpath oh-my-zsh/) $HOME/.oh-my-zsh
+}

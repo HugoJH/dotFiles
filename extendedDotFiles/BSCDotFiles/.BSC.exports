@@ -1,0 +1,32 @@
+#!/usr/bin/env zsh
+
+## Ruby
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+## Perl
+export PATH="/home/hugo/perl5/bin${PATH:+:${PATH}}"
+export PERL5LIB="/home/hugo/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
+export PERL_LOCAL_LIB_ROOT="/home/hugo/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_MB_OPT="--install_base \"/home/hugo/perl5\""
+export PERL_MM_OPT="INSTALL_BASE=/home/hugo/perl5"
+
+#Java
+export JAVA_HOME=/usr/lib/jvm/default
+		
+#Locale exports
+
+export LANG=en_US.utf8
+export LC_CTYPE=en_US.utf8
+export LC_NUMERIC=C
+export LC_TIME=en_US.utf8
+export LC_COLLATE=C
+export LC_MONETARY=es_ES.utf8
+export LC_MESSAGES=en_US.utf8
+export LC_PAPER=es_ES.utf8
+export LC_NAME=es_ES.utf8
+export LC_ADDRESS=es_ES.utf8
+export LC_TELEPHONE=es_ES.utf8
+export LC_MEASUREMENT=es_ES.utf8
+export LC_IDENTIFICATION=es_ES.utf8
+
+

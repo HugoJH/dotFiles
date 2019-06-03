@@ -1,0 +1,6 @@
+#!/usr/bin/env zsh
+
+alias mn1='ssh mn1'
+alias mn2='ssh mn2'
+alias mn3='ssh mn3'
+alias drbbt='~/code/rbbt-util/bin/rbbt --dev=~/code/'

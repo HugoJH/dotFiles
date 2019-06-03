@@ -5,5 +5,27 @@ add2PATH()
 	if [[ $PATH != *"$1"* ]]
 	then
 		PATH="$PATH":"$1"
-	elif
+	fi
 }
+add2LDPATH()
+{
+	if [[ $LD_LIBRARY_PATH != *"$1"* ]]
+	then
+		LD_LIBRARY_PATH="$LD_LIBRARY_PATH":"$1"
+	fi
+
+}
+
+sourceBasicDotFiles()
+{
+    source ~/.exports
+    source ~/.aliases
+    source $ZSH/oh-my-zsh.sh
+}
+
+sourceBSCDotFiles()
+{
+    source ~/.BSC.exports
+    source ~/.BSC.aliases
+}
+
