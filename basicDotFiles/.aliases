@@ -20,6 +20,7 @@ alias cdo='[ $(git rev-parse --git-dir 2>& /dev/null) ] && cd `git rev-parse --s
 
 ### SYSTEM ###
 alias getip='hostname -i'
+alias vim='vim -X'
 alias vi=vim
 alias t=todo.sh
 alias cdd='cd `xdg-user-dir DOWNLOAD`'
