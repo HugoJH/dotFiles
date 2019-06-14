@@ -3,6 +3,8 @@
 ## Ruby
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+# Add rbbt from git repo to path
+export PATH="$PATH:$HOME/code/rbbt-util/bin/"
 
 ## Perl
 export PATH="/home/hugo/perl5/bin${PATH:+:${PATH}}"
