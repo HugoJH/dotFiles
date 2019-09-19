@@ -3,4 +3,8 @@
 alias mn1='ssh mn1'
 alias mn2='ssh mn2'
 alias mn3='ssh mn3'
+alias dt1='ssh dt1'
+alias dt2='ssh dt2'
+
+alias carlos='ssh carlos'
 alias drbbt='~/code/rbbt-util/bin/rbbt --dev=~/code/'
