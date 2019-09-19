@@ -8,3 +8,4 @@ alias dt2='ssh dt2'
 
 alias carlos='ssh carlos'
 alias drbbt='~/code/rbbt-util/bin/rbbt --dev=~/code/'
+alias life='ssh life'
