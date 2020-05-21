@@ -1,18 +1,11 @@
 #!/usr/bin/env zsh
 
-
 createDotFilesSymLinks()
 {
-    for file in $(ls -d $1/.?*); do
-        ln -snf  $( realpath $file) $HOME/$( basename $file)
-    done
+  DIR=`realpath $1`
+  for file in $(realpath `ls $DIR/*`); do
+    ln -snf  $( realpath $file) $HOME/.$( basename $file)
+
+  done
 }
 
-
-createBasicAndExtendedDotFilesSymLinks()
-{
-    createDotFilesSymLinks basicDotFiles 
-    createDotFilesSymLinks extendedDotFiles/BSCDotFiles 
-}
-
-createBasicAndExtendedDotFilesSymLinks

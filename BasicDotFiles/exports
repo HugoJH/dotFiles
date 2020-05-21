@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+source $HOME/.functions
+
+export QUOTING_STYLE=literal
+export EDITOR="vim"
+
+#LD_LIBRARY_PATH
+add2LDPATH $HOME/.local/lib
+
+#PATH
+add2PATH ~/.local/sbin
+add2PATH ~/.cargo/bin
+add2PATH $HOME/.rvm/bin
+

@@ -1,10 +1,9 @@
 #!/usr/bin/env zsh
-
 set -e 
 set -u 
 set -o pipefail
 set -x
 
-git submodule init && git submodule update
+source createSymLinks
 
-./createSymLinks
+createSymLinks BasicDotFiles

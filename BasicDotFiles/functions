@@ -1,0 +1,52 @@
+#!/usr/bin/env zsh
+
+add2PATH()
+{
+	if [[ $PATH != *"$1"* ]]
+	then
+		PATH="${PATH:+:${PATH}}$1"
+	fi
+}
+
+add2LDPATH()
+{
+	if [[ $LD_LIBRARY_PATH != *"$1"* ]]
+	then
+		LD_LIBRARY_PATH="${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}$1"
+	fi
+
+}
+
+sourceBasicDotFiles()
+{
+    source $HOME/.exports
+    source $HOME/.aliases
+}
+
+sourceBSCDotFiles()
+{
+    source $HOME/.BSC.exports
+    source $HOME/.BSC.aliases
+}
+
+conda_setup()
+{
+  __conda_setup="$('$HOME/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+  if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+  else
+    if [ -f "$HOME/anaconda3/etc/profile.d/conda.sh" ]; then
+      . "$HOME/anaconda3/etc/profile.d/conda.sh"
+    else
+      add2PATH $HOME/anaconda3/bin
+    fi
+  fi
+  unset __conda_setup
+}
+
+add2PATH /home/hugo/perl5/bin
+export PERL5LIB="/home/hugo/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
+export PERL_LOCAL_LIB_ROOT="/home/hugo/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}" 
+export PERL_MB_OPT="--install_base \"/home/hugo/perl5\""
+export PERL_MM_OPT="INSTALL_BASE=/home/hugo/perl5"
+

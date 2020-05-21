@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+source .zimfw.zsh
+
+source $HOME/.functions
+
+sourceBasicDotFiles
+sourceBSCDotFiles
+conda_setup
+
+
+# Theme
+#
+
+fpath+=$HOME/.zsh/pure
+autoload -U promptinit; promptinit
+prompt pure
