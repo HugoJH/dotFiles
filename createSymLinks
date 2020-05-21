@@ -13,7 +13,6 @@ createBasicAndExtendedDotFilesSymLinks()
 {
     createDotFilesSymLinks basicDotFiles 
     createDotFilesSymLinks extendedDotFiles/BSCDotFiles 
-    ln -snf $( realpath oh-my-zsh/) $HOME/.oh-my-zsh
 }
 
 createBasicAndExtendedDotFilesSymLinks
