@@ -1,0 +1,22 @@
+#!/usr/bin/env zsh
+
+# SSH
+#
+
+alias mn0='ssh mn0'
+alias mn1='ssh mn1'
+alias mn2='ssh mn2'
+alias mn3='ssh mn3'
+alias dt1='ssh dt1'
+alias dt2='ssh dt2'
+alias dts1='ssh dts1'
+alias dts2='ssh dts2'
+alias cns0='ssh cns0'
+alias cns1='ssh cns1'
+alias cns2='ssh cns2'
+alias cns3='ssh cns3'
+alias life='ssh life'
+alias carlos='ssh carlos'
+
+alias drbbt='$HOME/code/rbbt-util/bin/rbbt --dev=~/code/'
+alias prov='drbbt workflow prov'
