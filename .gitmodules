@@ -1,9 +1,3 @@
-[submodule "oh-my-zsh"]
-	path = oh-my-zsh
-	url = https://github.com/robbyrussell/oh-my-zsh.git
 [submodule "SpaceVim"]
 	path = SpaceVim
 	url = https://github.com/SpaceVim/SpaceVim.git
-[submodule "the_silver_searcher"]
-	path = the_silver_searcher
-	url = https://github.com/ggreer/the_silver_searcher.git
