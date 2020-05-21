@@ -1,5 +1,5 @@
 #!/usr/bin/env zsh
-source .zimfw.zsh
+source $HOME/.zimfw.zsh
 
 source $HOME/.functions
 
