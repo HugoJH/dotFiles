@@ -7,3 +7,4 @@ set -x
 source createSymLinks
 
 createSymLinks BasicDotFiles
+createSymLinks ExtendedDotFiles/BSCDotFiles/
