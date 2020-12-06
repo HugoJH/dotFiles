@@ -2,19 +2,14 @@
 
 add2PATH()
 {
-	if [[ $PATH != *"$1"* ]]
-	then
-		PATH="${PATH:+:${PATH}}$1"
-	fi
+  typeset -TUx PATH path
+  path+=($1)
 }
 
 add2LDPATH()
 {
-	if [[ $LD_LIBRARY_PATH != *"$1"* ]]
-	then
-		LD_LIBRARY_PATH="${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}$1"
-	fi
-
+  typeset -TUx LD_LIBRARY_PATH ld_library_path
+  ld_library_path+=($1)
 }
 
 sourceBasicDotFiles()
